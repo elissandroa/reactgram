@@ -3,12 +3,12 @@ const { Schema } = mongoose;
 
 
 const photoSchema = new Schema({
-    image: stgring,
+    image: String,
     title: String,
     likes: Array,
     comments: Array,
     userId: mongoose.ObjectId,
-    userName: string,
+    userName: String,
 },{
     timestamps: true
 })
