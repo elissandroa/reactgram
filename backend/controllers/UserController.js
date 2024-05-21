@@ -58,7 +58,7 @@ const login = async (req, res) => {
     //Check if user exists
 
     if (!user) {
-        res.status(404).json({ erros: ["Usuário não encontrado"] });
+        res.status(404).json({ errors: ["Usuário não encontrado"] });
         return
     }
 
